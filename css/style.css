@@ -1,15 +1,23 @@
 /* global */
 html,
-body{
+body {
     font-family: 'Jost', sans-serif;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 /* header */
-.header{
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 25px;
+}
+
+.header {
     background-color: #ffffff;
     height: 90px;
     position: fixed;
@@ -21,36 +29,45 @@ body{
     align-items: center;
     box-shadow: 0 3px 6px 0 rgb(0 0 0 / 5%);
 }
-.header .container{
+
+.header .container {
     max-width: 1200px;
     margin: auto;
     padding: 0 25px;
 }
-.header .navbar-brand{
+
+.header .navbar-brand {
     color: #189a46;
     font-size: 34px;
     font-weight: 600;
     margin: 0;
 }
-.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover{
+
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover {
     color: #189a46;
 }
-.header .navbar-nav .nav-link{
+
+.header .navbar-nav .nav-link {
     font-size: 19.2px;
     font-weight: 400;
     padding: 14px 0;
-    color: #000c04;   
+    color: #000c04;
 }
-.header .navbar-nav .nav-link.active{
+
+.header .navbar-nav .nav-link.active {
     color: #189a46;
 }
-.header .navbar-nav .nav-link:hover{
+
+.header .navbar-nav .nav-link:hover {
     color: #189a46;
 }
-.header .nav-item{
+
+.header .nav-item {
     padding: 0 12px;
 }
-.header .dropdown-item{
+
+.header .dropdown-item {
     font-weight: 400;
     font-size: 1.2em;
     color: #000c04;
@@ -58,33 +75,36 @@ body{
     width: 100px;
     padding-bottom: 14px;
 }
-.header .navbar-nav .nav-link i{
+
+.header .navbar-nav .nav-link i {
     font-size: 14px;
     padding-left: 2px;
     font-weight: 600;
 }
-.header .mode__container{
+
+.header .mode__container {
     font-size: 25px;
     margin-left: 20px;
 }
+
 /* slider */
-.slider .container{
-    max-width: 1200px;
-}
-.slider .carousel-item h5{
+.slider .carousel-item h5 {
     font-size: 60px;
     line-height: 76px;
     font-weight: 600;
 }
-.slider .carousel-item p{
+
+.slider .carousel-item p {
     font-size: 1.2em;
     font-weight: 400;
     line-height: 30px;
 }
-.slider .carousel-item .carousel-caption{
+
+.slider .carousel-item .carousel-caption {
     max-width: 700px;
 }
-.slider .carousel-caption .button1{
+
+.slider .carousel-caption .button1 {
     padding: 12px 35px;
     font-size: 18px;
     line-height: 28px;
@@ -95,7 +115,8 @@ body{
     border-radius: 10px;
     margin: 3rem 0.5rem 0 0;
 }
-.slider .carousel-caption .button2{
+
+.slider .carousel-caption .button2 {
     color: #ffffff;
     border: 2px solid #ffffff;
     padding: 12px 35px;
@@ -105,15 +126,18 @@ body{
     margin-top: 3rem;
     transition: all 0.3s ease-in 0s;
 }
-.slider .carousel-caption .button2:hover{
+
+.slider .carousel-caption .button2:hover {
     color: #189a46;
     background-color: #ffffff;
 }
-.slider .carousel-caption{
+
+.slider .carousel-caption {
     bottom: 50%;
     transform: translateY(50%);
 }
-.slider .carousel-item::before{
+
+.slider .carousel-item::before {
     content: "";
     background-color: #000000;
     position: absolute;
@@ -123,24 +147,29 @@ body{
     right: 0;
     opacity: 55%;
 }
-.slider .carousel-indicators button{
+
+.slider .carousel-indicators button {
     width: 10px;
     height: 10px;
     border-radius: 50%;
 }
-.slider .carousel-inner img{
+
+.slider .carousel-inner img {
     height: 700px;
     object-fit: cover;
 }
+
 .slider .carousel-inner .carousel-caption {
     text-align: left;
 }
+
 /* about */
-.about{
+.about {
     padding: 6rem 0;
-    
+
 }
-.about .content{
+
+.about .content {
     width: 700px;
     margin: auto;
     text-align: center;
@@ -148,66 +177,74 @@ body{
     flex-direction: column;
     align-items: center;
 }
-.about .content p{
+
+.about .content p {
     margin: 0;
     font-size: 18px;
     color: #f53626;
     font-weight: 400;
-    letter-spacing: 1px;    
+    letter-spacing: 1px;
     line-height: 2em;
 }
-.about .content h2{
+
+.about .content h2 {
     font-size: 40px;
     font-weight: 600;
 }
-.about .content span{
+
+.about .content span {
     font-size: 1.2em;
     color: #696969;
 }
-.about .content a{
+
+.about .content a {
     display: block;
     text-decoration: none;
-    border-bottom:2px solid #189a46;
+    border-bottom: 2px solid #189a46;
     font-size: 17px;
     font-weight: 600;
     margin-top: 20px;
     color: #000c04;
     transition: all 0.3s ease-in-out 0s;
 }
-.about .content a:hover{
+
+.about .content a:hover {
     color: #189a46;
 }
+
 /* services */
-.services{
+.services {
     background-color: rgba(147, 107, 232, 0.05);
     padding: 3rem;
 }
-.services .container{
-    max-width: 1200px;
-    margin: auto;
-}
-.services .row{
+
+.services .row {
     margin-right: -15px;
     margin-left: -15px;
 }
-.services .col-4{
+
+.services .col-4 {
     padding-right: 15px;
     padding-left: 15px;
 }
-.services .item{
+
+.services .item {
     padding: 40px 30px;
     margin-top: 30px;
     background-color: #ffffff;
     transition: all 0.5s ease 0s;
 }
-.services .item:hover{
+
+.services .item:hover {
     background-color: rgba(147, 107, 232, 0.05);
 }
-.services .row .icon i{
+
+.services .row .icon i {
     color: #189a46;
     font-size: 30px;
 }
-.services .row h4 a{
+
+.services .row h4 a {
     display: block;
     text-decoration: none;
     color: #000c04;
@@ -215,15 +252,18 @@ body{
     font-weight: 600;
     margin: 25px 0 15px 0;
 }
-.services .row h4 a:hover{
+
+.services .row h4 a:hover {
     color: #189a46;
 }
-.services .row p{
+
+.services .row p {
     font-size: 1.2em;
     line-height: 28px;
     color: #696969;
 }
-.services .row a.read{
+
+.services .row a.read {
     display: inline-block;
     text-decoration: none;
     font-size: 17px;
@@ -233,6 +273,151 @@ body{
     margin-top: 20px;
     transition: all 0.3s ease-in-out 0s;
 }
-.services .row a.read:hover{
+
+.services .row a.read:hover {
     color: #189a46;
+}
+
+/* highlights */
+.highlights .item img {
+    border-radius: 10px;
+    vertical-align: middle;
+}
+
+.highlights .row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.highlights .col-6 {
+    padding-right: 15px;
+}
+
+.highlights .col-6 .item h6 {
+    color: #f53626;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 2em;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.highlights .col-6 .item h3 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+    margin: 0;
+}
+
+.highlights .item ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+.highlights .item ul li {
+    font-size: 16px;
+    line-height: 26px;
+    color: #000c04;
+    margin: 15px 0;
+    font-weight: 600;
+}
+
+.highlights .item i {
+    color: #189a46;
+    margin-right: 12px;
+    background-color: rgba(147, 107, 232, 0.05);
+    font-size: 10px;
+    padding: 8px;
+    border-radius: 50%;
+}
+/* counter */
+.counter{
+    background-color: #189a46;
+}
+.counter .row p{
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 30px;
+}
+.counter .row h4{
+    font-size: 20px;
+    line-height: 25px;
+    color: #fff;
+    margin-top: 10px;
+    opacity: 0.8;
+    font-weight: 400;
+}
+/* plans */
+.plans{
+    background-color: rgba(147, 107, 232, 0.05);
+}
+.plans .main{
+    margin: 0 5% auto;
+}
+.plans .item-bottom ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+.plans .main .item{
+    background-color: #fff;
+    border-radius: 6px;
+    align-items: center;
+}
+.plans .title p{
+    color: #f53626;
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.plans .title h2{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+}
+.plans .main .item h6{
+    margin-bottom: 10px;
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 600;
+}
+
+.plans .main .item h4{
+    font-size: 40px;
+    line-height: 45px;
+    margin: 15px 0 20px;
+    font-weight: 600;
+    color: #189a46;
+}
+.plans .main .active h4{
+    color: #fff;
+}
+.plans .main .item label{
+    font-size: 25px;
+    vertical-align: text-top;
+}
+.plans .main .item span{
+    font-size: 16px;
+    line-height: 25px;
+    color: #999;
+    font-weight: 400;
+}
+.plans .main .active .item-top{
+    background-color: #189a46;
+    color: #fff;
+}
+.plans .main .active h5{
+    font-size: 15px;
+    line-height: 20px;
+    color: #189a46;
+    margin-bottom: 30px;
+    font-weight: 700;
+    display: inline-block;
+    padding: 8px 20px;
+    background: #fff;
+    border-radius: 10px;
 }
