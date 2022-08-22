@@ -518,8 +518,8 @@ body {
     line-height: 28px;
 }
 .subscribe .main .form{
-    display: grid;
-    grid-template-columns: 3fr 1fr;
+    display: flex;
+    justify-content: space-between;
     max-width: 650px;
     margin: auto;
 }
@@ -527,7 +527,9 @@ body {
     font-size: 16px;
     height: 60px;
     padding: 0 20px;
-    width: 60%;
+    flex-basis: 70%;
+    border-radius: 10px;
+    border: 1px solid #ced4da;
 }
 .subscribe .main button{
     color: #fff;
@@ -537,4 +539,68 @@ body {
     padding: 12px 35px;
     font-size: 18px;
     line-height: 28px;
+    flex-basis: 27%;
+    transition: 0.3s ease-in;
+}
+.subscribe .main button:hover{
+    background-color: #116E32;
+}
+/* footer */
+.footer{
+    background: #111;
+}
+
+.footer .container{
+    width: 80%;
+}
+
+.footer .container .row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.footer .container .row h6{
+    color: #fff;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.footer .container .row ul li{
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.footer .container .row ul li p{
+    font-weight: normal;
+    font-size: 16px;
+    color: #696969;
+    line-height: 28px;
+}
+
+.footer .container .row ul li a{
+    font-weight: normal;
+    font-size: 16px;
+    color: #696969;
+    line-height: 28px;
+    text-decoration: none;
+}
+  
+.footer .container .row ul li a:hover{
+    color: white;
+    text-decoration: underline;
+} 
+
+.footer .container .row .main-social{
+    margin-top: 3px;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+}
+
+.footer .container .social-icon .row ul li {
+    display: inline-block;
 }
