@@ -87,6 +87,20 @@ body {
     margin-left: 20px;
 }
 
+.header .navbar-nav .nav-link::before{
+    width: 0;
+    position: absolute;
+    content: '';
+    background: #189a46;
+    height: 1px;
+    bottom: 13px;
+    transition: all .5s;
+}
+
+.header .navbar-nav .nav-link:hover::before{
+    width: 65px;
+}
+
 /* slider */
 .slider .carousel-item h5 {
     font-size: 60px;
