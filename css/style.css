@@ -12,7 +12,7 @@ body {
 
 /* header */
 .container {
-    max-width: 1200px;
+    width: 80%;
     margin: auto;
     padding: 0 25px;
 }
@@ -85,20 +85,6 @@ body {
 .header .mode__container {
     font-size: 25px;
     margin-left: 20px;
-}
-
-.header .navbar-nav .nav-link::before{
-    width: 0;
-    position: absolute;
-    content: '';
-    background: #189a46;
-    height: 1px;
-    bottom: 13px;
-    transition: all .5s;
-}
-
-.header .navbar-nav .nav-link:hover::before{
-    width: 65px;
 }
 
 /* slider */
@@ -455,6 +441,13 @@ body {
 .plans .item-bottom .buy-button{
     margin-top: 2em;
 }
+.plans .main .content{
+    border-radius: 6px;
+}
+.plans .main .content-2{
+    transform: scale(1.03);
+    box-shadow: 0 10px 30px 0 rgb(17 17 17 / 9%);
+}
 /* video */
 .video .title h6{
     font-size: 18px;
@@ -491,6 +484,10 @@ body {
     height: 55px;
     border-radius: 50%;
     line-height: 55px;
+    transition: 0.3s ease-in-out;
+}
+.video .main i:hover{
+    transform: scale(1.1);
 }
 .video .main img{
     border-radius: 10px;
@@ -564,10 +561,6 @@ body {
     background: #111;
 }
 
-.footer .container{
-    width: 80%;
-}
-
 .footer .container .row{
     display: flex;
     flex-wrap: wrap;
@@ -582,10 +575,15 @@ body {
     font-weight: 600;
     margin-bottom: 25px;
 }
-
+.footer .container .row .social-icons{
+    display: flex;
+}
+.footer .container .row ul{
+    padding-left: 0;
+}
 .footer .container .row ul li{
     list-style: none;
-    margin-bottom: 5px;
+    margin: 5px 15px 0 0;
 }
 
 .footer .container .row ul li p{
@@ -593,6 +591,7 @@ body {
     font-size: 16px;
     color: #696969;
     line-height: 28px;
+    margin-bottom: 0;
 }
 
 .footer .container .row ul li a{
@@ -614,7 +613,21 @@ body {
     list-style: none;
     overflow: hidden;
 }
-
-.footer .container .social-icon .row ul li {
-    display: inline-block;
+.footer__bottom p{
+    font-size: 16px;
+    color: #696969;
+    text-align: center;
+    margin-bottom: 0;
+}
+.footer__bottom{
+    border-top: 1px solid rgba(103, 99, 99, 0.14);
+}
+.footer__bottom p a{
+    text-decoration: none;
+    color: #f53626;
+    opacity: 0.9;    
+}
+.footer__bottom p a:hover{
+    text-decoration: underline;
+    opacity: 0.8;
 }
