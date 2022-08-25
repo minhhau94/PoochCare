@@ -64,7 +64,7 @@ body{
     position: absolute;
     content: '';
     background: #189a46;
-    height: 1px;
+    height: 2px;
     bottom: 13px;
     transition: all .5s;
 }
