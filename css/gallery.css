@@ -199,13 +199,12 @@ body{
 }
 
 .gallery .hover14 figure:hover::before{
-    animation: shine 0.5s;
+    animation: shine 0.75s;
 }
 
 @keyframes shine {
     0%{
         opacity: 1;
-        transform: translate(-50px);
         transform: scaleX(-25deg);
         visibility: visible;
     }
@@ -217,6 +216,7 @@ body{
     } */
 
     100%{
+        left: 150%;
         transform: translateX(190px);
         transform: scaleX(-100deg);
         visibility: hidden;

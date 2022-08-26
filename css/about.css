@@ -321,3 +321,8 @@ body {
     font-weight: 700;
     margin-bottom: 6px;
 }
+/* features */
+.features .row img{
+    width: 100%;
+    border-radius: 10px;
+}
