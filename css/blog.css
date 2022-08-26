@@ -10,7 +10,7 @@ body{
     box-sizing: border-box;
 }
 /* header */
-.header{
+.header {
     background-color: #ffffff;
     height: 90px;
     position: fixed;
@@ -20,33 +20,58 @@ body{
     z-index: 10;
     display: flex;
     align-items: center;
+    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 5%);
 }
-.header .container{
-    max-width: 1200px;
+.container {
+    max-width: 80%;
     margin: auto;
+    padding: 0 25px;
 }
-
-.header .navbar-brand{
+.header .navbar-brand {
     color: #189a46;
     font-size: 34px;
     font-weight: 600;
+    margin: 0;
 }
-.header .navbar-nav .nav-link{
+
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover {
+    color: #189a46;
+}
+
+.header .navbar-nav a.nav-link {
     font-size: 19.2px;
     font-weight: 400;
     padding: 14px 0;
-    color: #000c04;   
+    color: #000c04;
+    position: relative;
 }
-.header .navbar-nav .nav-link.active{
+
+.header .navbar-nav a.nav-link.active {
     color: #189a46;
 }
-.header .navbar-nav .nav-link:hover{
+
+.header .navbar-nav a.nav-link:hover {
     color: #189a46;
 }
-.header .nav-item{
+.header .navbar-nav a.nav-link::before{
+    position: absolute;
+    bottom: 13px;
+    left: 0;
+    content: "";
+    background: #189a46;
+    width: 0;
+    height: 1px;
+    transition: all 0.5s ease 0s;
+}
+.header .navbar-nav a:hover.nav-link::before{
+    width: 100%;
+}
+.header .nav-item {
     padding: 0 12px;
 }
-.header .dropdown-item{
+
+.header .dropdown-item {
     font-weight: 400;
     font-size: 1.2em;
     color: #000c04;
@@ -54,10 +79,17 @@ body{
     width: 100px;
     padding-bottom: 14px;
 }
-.header .navbar-nav .nav-link i{
+
+.header .navbar-nav .nav-link i {
     font-size: 14px;
     padding-left: 2px;
     font-weight: 600;
+}
+
+
+.header .mode__container {
+    font-size: 25px;
+    margin-left: 20px;
 }
 
 .header .navbar-nav .nav-link::before{
