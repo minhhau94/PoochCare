@@ -1,14 +1,15 @@
 /* global */
 html,
-body{
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-    background-color: #f8f6fd;
-    }
-*{
+body {
+    font-family: 'Jost', sans-serif;
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 /* header */
 .header {
     background-color: #ffffff;
@@ -91,21 +92,6 @@ body{
     font-size: 25px;
     margin-left: 20px;
 }
-
-.header .navbar-nav .nav-link::before{
-    width: 0;
-    position: absolute;
-    content: '';
-    background: #189a46;
-    height: 2px;
-    bottom: 13px;
-    transition: all .5s;
-}
-
-.header .navbar-nav .nav-link:hover::before{
-    width: 65px;
-}
-
 /* banner */
 .banner{
     margin-top: 90px;
@@ -166,12 +152,27 @@ body{
     color: #ffffff;
 }
 
-/* blog */
-.blog .container{
+/* service */
+.service .container{
     width: 80%;
 }
 
-.blog .container .title{
+.w3l-content-with-photo-4 .content-photo-grids {
+    border-bottom: 1px solid #f0f3f0;
+    padding-bottom: 80px;
+    align-items: center;
+}
+
+body img{
+    border-radius: 10px;
+}
+
+.photo-6-inf-right{
+    padding-left: 3rem !important;
+}
+
+.photo-6-inf-right .sub-title{
+
     font-size: 18px;
     font-weight: 400;
     text-transform: uppercase;
@@ -180,77 +181,32 @@ body{
     color: #f53626;
 }
 
-.blog .container .h-title{
+.photo-6-inf-right .hny-title {
     font-size: 40px;
     font-weight: 600;
     line-height: 48px;
     text-transform: capitalize;
 }
 
-.blog .container .row{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: calc(-1 * var(--bs-gutter-y));
-    margin-right: calc(-0.5 * var(--bs-gutter-x));
-    margin-left: calc(-0.5 * var(--bs-gutter-x));
-}
-
-.blog .container .row .card{
-    border-radius: 10px;
-}
-
-.blog .container .row .card:hover{
-    transform: translateY(-0.5rem);
-    transition: 0.3s ease;
-}
-
-.blog .container .row .card a{
-    cursor: pointer;   
-}
-
-.blog .container .row .card img{
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-end-end-radius: 0;
-    width: 100%;
-}
-   
-.blog .container .row .card-body{
-    flex: 1 1 auto;
-    min-height: 1px;
-    padding: 2rem 1rem;
-}
-
-.blog .container .row .card:hover .card-body{
-    box-shadow: 0 25px 98px 0 rgba(22, 22, 22, 0.11);
-}
-
-.blog .container .row .blog-detail{
-    background: #ffffff;
-    padding: 30px 20px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    box-shadow: 0 25px 98px 0 rgb(19 19 19 / 3%);
-    border: 1px solid #fff;
-}
-
-.blog .container .row .card-body a.blog-desc{
-    display: block;
-    font-size: 26px;
-    line-height: 34px;
-    font-weight: 600;
+.photo-6-inf-right a.read {
+    font-size: 17px;
+    padding: 0;
+    border-bottom: 2px solid #189a46;
     color: #000c04;
-    margin-bottom: 6px;
+    transition: 0.3s ease-in-out;
+    font-weight: 600;
+    border-radius: 0;
+    margin-top: 20px;
+    display: inline-block;
     text-transform: capitalize;
     text-decoration: none;
 }
 
-.blog .container .row .card-body a.blog-desc:hover{
+.photo-6-inf-right a.read:hover{
     color: #189a46;
-    transition: 0.3 ease;
 }
 
-.blog .container .row .card-body p{
+.photo-6-inf-right p{
     margin: 0;
     padding: 0;
     font-size: 1.2em;
@@ -259,86 +215,9 @@ body{
     font-family: 'Jost', sans-serif;
 }
 
-.blog .container .row .card-body .author{
-    color: #999;
-}
-
-.blog .container .row .card-body .author a{
-    color: #000c04;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 28px;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.blog .container .row .card-body .author a:hover{
-    color: #f53626;
-    transition: 0.3 ease;
-}
-
-.blog .container .row .card-body ul.blog-meta{
-    margin: 0;
-    padding: 0;
-}
-
-.blog .container .row .card-body .blog-meta li.meta-item{
-    display: inline-block;
-    margin-right: 15px;
-    font-size: 15px;
-    color: #888;
-}
-
-.pagination-wrapper .page-pagination li{
-    display: inline-block;
-    margin: 0 5px;
-}
-
-.pagination-wrapper .page-pagination span.page-numbers{
-    display: block;
-    text-align: center;
-    border: 0;
-    color: #189a46;
-    padding: 0;
-    font-size: 20px;
-    font-weight: 600;
-    margin-right: 5px;
-}
-
-.pagination-wrapper .page-pagination a.page-numbers{
-    font-size: 20px;
-    font-weight: 600;
-    color: black;
-    width: 20px;
-    display: block;
-    text-align: center;
-    text-decoration: none;
-}
-
-.pagination-wrapper .page-pagination a.page-numbers:hover{
-    color: #189A46;
-}
-
-.pagination-wrapper .page-pagination a.next span.fa{
-    font-size: 20px;
-    font-weight: 600;
-    color: black;
-    width: 20px;
-    display: block;
-}
-
-.pagination-wrapper .page-pagination a.next{
-    text-decoration: none;
-}
-
 /* footer */
-
 .footer{
     background: #111;
-}
-
-.footer .container{
-    width: 80%;
 }
 
 .footer .container .row{
@@ -355,14 +234,15 @@ body{
     font-weight: 600;
     margin-bottom: 25px;
 }
-
+.footer .container .row .social-icons{
+    display: flex;
+}
 .footer .container .row ul{
     padding-left: 0;
 }
-
 .footer .container .row ul li{
     list-style: none;
-    margin-bottom: 5px;
+    margin: 5px 15px 0 0;
 }
 
 .footer .container .row ul li p{
@@ -370,6 +250,7 @@ body{
     font-size: 16px;
     color: #696969;
     line-height: 28px;
+    margin-bottom: 0;
 }
 
 .footer .container .row ul li a{
@@ -391,35 +272,21 @@ body{
     list-style: none;
     overflow: hidden;
 }
-
-.footer .container .social-icons{
-    display: flex;
-    gap: 13px;
-}
-
-.footer .footer-bot{
-    background: #111;
-    border-top: 1px solid rgba(103, 99, 99, 0.14);
-}
-
-.footer .footer-bot .container{
-    width: 80%;
-}
-
-.footer .footer-bot .container p{
-    font-weight: normal;
+.footer__bottom p{
     font-size: 16px;
-    line-height: 28px;
     color: #696969;
+    text-align: center;
     margin-bottom: 0;
 }
-
-.footer .footer-bot .container a{
-    color: #cf3022;
-    opacity: 0.9;
+.footer__bottom{
+    border-top: 1px solid rgba(103, 99, 99, 0.14);
+}
+.footer__bottom p a{
     text-decoration: none;
-} 
-
-
-
-
+    color: #f53626;
+    opacity: 0.9;    
+}
+.footer__bottom p a:hover{
+    text-decoration: underline;
+    opacity: 0.8;
+}

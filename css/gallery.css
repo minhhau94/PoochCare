@@ -105,30 +105,36 @@ body{
     width: 65px;
 }
 
-/* Banner */
+/* banner */
 .banner{
+    margin-top: 90px;
     position: relative;
-}
-
-.banner img{
-    width: 100%;
-    height: 400px;
+    background-image: url(../image/banner4.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    object-fit: cover;
-    filter: brightness(50%);
+    width: 100%;
+    height: 250px;
 }
-
-.banner .container{
-    max-width: 1200px;
+.banner::before{
+    content: "";
+    background-color: #0c0c0c;
     position: absolute;
-    transform: translate(12%,-200%);
-    
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.6;
 }
-
+.banner .container{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+}
 .banner h2.title{
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 600;
     color: #fff;
 }
@@ -141,22 +147,23 @@ body{
     font-weight: 400;
     text-transform: capitalize;
     color: #fff;
+    list-style-type: none;
 }
 
 .banner .content a{
     text-decoration: none;
-    color: #189A46;
-    list-style: none;
+    color: #189a46;
+    text-decoration: none;
 }
 
 .banner .content span{
-    color: black;
+    font-size: 12px;
+    vertical-align: 2px;    
 }
 
 .banner .arrow{
-    color: #ffffff !important;
+    color: #ffffff;
 }
-
 /* gallery */
 .gallery .container{
     width: 80%;
