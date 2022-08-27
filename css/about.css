@@ -240,13 +240,15 @@ body {
 }
 /* about */
 .about .about__left h6,
-.history .content h6{
+.history .content h6,
+.features .item h6 {
     font-size: 18px;
     font-weight: 400;
     letter-spacing: 1px;
     color: #f53626;
 }
-.about .about__left h2{
+.about .about__left h2,
+.features .item h2{
     font-size: 40px;
     font-weight: 600;
     line-height: 48px;
@@ -258,9 +260,10 @@ body {
     color: #000c04;
     font-weight: 600;
 }
-.about .about__right p{
+.about .about__right p,
+.features .item p{
     color: #696969;
-    font-size: 20px;
+    font-size: 19px;
 }
 .about .row a.read {
     display: inline-block;
@@ -325,4 +328,23 @@ body {
 .features .row img{
     width: 100%;
     border-radius: 10px;
+}
+.features .contentRight a{
+    text-align: left;
+    margin-bottom: 0;
+    color: #000c04;
+    font-weight: 600;
+    font-size: 24px;
+    text-decoration: none;
+}
+.features .contentLeft{
+    color: #189a46;
+    text-align: center;
+    font-size: 40px;
+}
+.features .col__left{
+    padding-left: 15px;
+}
+.features .col__right{
+    padding-right: 15px;
 }
