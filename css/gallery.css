@@ -199,7 +199,7 @@ body{
 }
 
 .gallery .hover14 figure:hover::before{
-    animation: shine 0.75s;
+    animation: shine 1s;
 }
 
 @keyframes shine {
