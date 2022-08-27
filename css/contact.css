@@ -292,8 +292,9 @@ body {
     font-weight: 600;
     margin-bottom: 25px;
 }
-.footer .container .row .social-icons{
+.footer .container .row ul.social-icons{
     display: flex;
+    margin-bottom: 0;
 }
 .footer .container .row ul{
     padding-left: 0;
@@ -304,13 +305,11 @@ body {
 }
 
 .footer .container .row ul li p{
-    font-weight: normal;
     font-size: 16px;
     color: #696969;
     line-height: 28px;
     margin-bottom: 0;
 }
-
 .footer .container .row ul li a{
     font-weight: normal;
     font-size: 16px;

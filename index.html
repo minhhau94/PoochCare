@@ -22,7 +22,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <!-- style css -->
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/index.css">
 </head>
 
 <body>
@@ -45,7 +45,7 @@
                 <a class="nav-link" href="/about.html">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./services.html">Services</a>
+                <a class="nav-link" href="/services.html">Services</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/gallery.html">Gallery</a>
@@ -73,7 +73,8 @@
   </header>
   <!-- slider -->
   <section class="slider">
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <!-- data-bs-ride="carousel" -->
+    <div id="carouselExampleCaptions" class="carousel slide" >
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
           aria-current="true" aria-label="Slide 1"></button>
@@ -87,14 +88,12 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="./image/banner1.jpg" class="d-block w-100" alt="...">
-          <div class="container">
             <div class="carousel-caption d-none d-md-block">
               <h5>Quality Things for <br> Loving Pets</h5>
               <p>Keeps your Pet Smiling</p>
               <button class="button1">Read More</button>
               <button class="button2">Contact Us</button>
             </div>
-          </div>
         </div>
         <div class="carousel-item">
           <img src="./image/banner2.jpg" class="d-block w-100" alt="...">
@@ -378,77 +377,135 @@
   <!-- video -->
   <section class="video py-5">
     <div class="container py-lg-5 text-center">
-      <header class="title">
-        <h6>BETTER PET NUTRITION.</h6>
-        <h3>The Finest Fresh Food And All Your Pet Needs.</h3>
-        <p class="mt-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet elit consec
-          tetur adipisi elit. Lorem ipsum dolor sit amet elit consec tetur adipisi elit. Iure voluptatibus explicabo
-          officia.</p>
-      </header>
-      <main class="main">
-        <img src="./image/banner2.jpg" class="img-fluid" alt="video-popup">
-        <a href="" class="text-center"><i class="fa fa-play"></i></a>
-        <!-- <iframe src="https://player.vimeo.com/video/101587706"frameborder="0" allow="autoplay; fullscreen"allowfullscreen=""></iframe> -->
-      </main>
+      <div class="content">
+        <header class="title">
+          <h6>BETTER PET NUTRITION.</h6>
+          <h3>The Finest Fresh Food And All Your Pet Needs.</h3>
+          <p class="mt-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet elit consec
+            tetur adipisi elit. Lorem ipsum dolor sit amet elit consec tetur adipisi elit. Iure voluptatibus explicabo
+            officia.</p>
+        </header>
+        <main class="main">
+          <img src="./image/banner2.jpg" class="img-fluid" alt="video-popup">
+          <a href="" class="text-center"><i class="fa fa-play"></i></a>
+          <!-- <iframe src="https://player.vimeo.com/video/101587706"frameborder="0" allow="autoplay; fullscreen"allowfullscreen=""></iframe> -->
+        </main>
+      </div>      
     </div>
   </section>
-
-  <!-- testimonials2 -->
-  <section class="testimonials w3l-clients">
-    <div class="container py-lg-5 py-md-3 pb-lg-0">
-      <div class="heading text-center mx-auto">
-          <h6 class="sub-title text-center">Testimonials</h6>
-          <h3 class="hny-title mb-md-5 mb-4">Happy Clients &amp; Feedbacks</h3>
-      </div>
-      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"  aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="10000">
-            <div class="carousel-caption">
-              <div class="testimonial-content">
-                <div class="testimonial">
+  <!-- testimonials -->
+  <section class="testimonials py-5">
+    <div class="container py-lg-4 py-md-3 pb-lg-0"">
+      <header class="title text-center">
+        <h6>TESTIMONIALS</h6>
+        <h3 class="mb-md-5">Happy Clients & Feedbacks</h3>
+      </header>
+      <main class="main">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"  aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <div class="carousel-caption">
+                <div class="testimonials-content">
+                  <div class="testimonials__item">
+                      <blockquote>
+                          <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium
+                              voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
+                              Dolores molestias adipisci dolor sit amet!.</q>
+                      </blockquote>
+                      <div class="testi-des">
+                          <div class="test-img">
+                            <img src="./image/f1.jpg" class="img-fluid" alt="client-img">
+                          </div>
+                          <div class="peopl align-self">
+                              <h3>John wilson</h3>
+                              <p class="indentity">Example City</p>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="testimonials-content">
+                <div class="testimonials__item">
                     <blockquote>
                         <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium
                             voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
                             Dolores molestias adipisci dolor sit amet!.</q>
                     </blockquote>
                     <div class="testi-des">
-                        <div class="test-img"><img src="./image/f1.jpg" class="img-fluid" alt="client-img">
+                        <div class="test-img"><img src="./image/f2.jpg" class="img-fluid" alt="client-img">
                         </div>
                         <div class="peopl align-self">
-                            <h3>John wilson</h3>
+                            <h3>Julia sakura</h3>
                             <p class="indentity">Example City</p>
                         </div>
                     </div>
                 </div>
-              </div>
-              <div class="testimonial-content">
-              <div class="testimonial">
-                  <blockquote>
-                      <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium
-                          voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
-                          Dolores molestias adipisci dolor sit amet!.</q>
-                  </blockquote>
-                  <div class="testi-des">
-                      <div class="test-img"><img src="./image/f2.jpg" class="img-fluid" alt="client-img">
-                      </div>
-                      <div class="peopl align-self">
-                          <h3>Julia sakura</h3>
-                          <p class="indentity">Example City</p>
-                      </div>
-                  </div>
-              </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <div class="carousel-caption">
-              <div class="testimonial-content">
-                <div class="testimonial">
+            <div class="carousel-item" data-bs-interval="2000">
+              <div class="carousel-caption">
+                <div class="testimonials-content">
+                  <div class="testimonials__item">
+                      <blockquote>
+                          <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium
+                              voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
+                              Dolores molestias adipisci dolor sit amet!.</q>
+                      </blockquote>
+                      <div class="testi-des">
+                          <div class="test-img"><img src="./image/f3.jpg" class="img-fluid" alt="client-img">
+                          </div>
+                          <div class="peopl align-self">
+                              <h3>Roy Linderson</h3>
+                              <p class="indentity">Example City</p>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="testimonials-content">
+                <div class="testimonials__item">
+                    <blockquote>
+                        <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium
+                            voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
+                            Dolores molestias adipisci dolor sit amet!.</q>
+                    </blockquote>
+                    <div class="testi-des">
+                        <div class="test-img"><img src="./image/f4.jpg" class="img-fluid" alt="client-img">
+                        </div>
+                        <div class="peopl align-self">
+                            <h3>Mike Thyson</h3>
+                            <p class="indentity">Example City</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-caption">
+                <div class="testimonials-content">
+                  <div class="testimonials__item">
+                      <blockquote>
+                          <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium
+                              voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
+                              Dolores molestias adipisci dolor sit amet!.</q>
+                      </blockquote>
+                      <div class="testi-des">
+                          <div class="test-img"><img src="./image/f5.jpg" class="img-fluid" alt="client-img">
+                          </div>
+                          <div class="peopl align-self">
+                              <h3>Laura Gill</h3>
+                              <p class="indentity">Example City</p>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="testimonials-content">
+                <div class="testimonials__item">
                     <blockquote>
                         <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium
                             voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
@@ -458,76 +515,19 @@
                         <div class="test-img"><img src="./image/f3.jpg" class="img-fluid" alt="client-img">
                         </div>
                         <div class="peopl align-self">
-                            <h3>Roy Linderson</h3>
+                            <h3>Smith Johnson</h3>
                             <p class="indentity">Example City</p>
                         </div>
                     </div>
                 </div>
-              </div>
-              <div class="testimonial-content">
-              <div class="testimonial">
-                  <blockquote>
-                      <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium
-                          voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
-                          Dolores molestias adipisci dolor sit amet!.</q>
-                  </blockquote>
-                  <div class="testi-des">
-                      <div class="test-img"><img src="./image/f4.jpg" class="img-fluid" alt="client-img">
-                      </div>
-                      <div class="peopl align-self">
-                          <h3>Mike Thyson</h3>
-                          <p class="indentity">Example City</p>
-                      </div>
-                  </div>
-              </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="carousel-caption">
-              <div class="testimonial-content">
-                <div class="testimonial">
-                    <blockquote>
-                        <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium
-                            voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
-                            Dolores molestias adipisci dolor sit amet!.</q>
-                    </blockquote>
-                    <div class="testi-des">
-                        <div class="test-img"><img src="./image/f5.jpg" class="img-fluid" alt="client-img">
-                        </div>
-                        <div class="peopl align-self">
-                            <h3>Laura Gill</h3>
-                            <p class="indentity">Example City</p>
-                        </div>
-                    </div>
                 </div>
-              </div>
-              <div class="testimonial-content">
-              <div class="testimonial">
-                  <blockquote>
-                      <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium
-                          voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
-                          Dolores molestias adipisci dolor sit amet!.</q>
-                  </blockquote>
-                  <div class="testi-des">
-                      <div class="test-img"><img src="./image/f3.jpg" class="img-fluid" alt="client-img">
-                      </div>
-                      <div class="peopl align-self">
-                          <h3>Smith Johnson</h3>
-                          <p class="indentity">Example City</p>
-                      </div>
-                  </div>
-              </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- /grids -->
-      
-  </div>
+      </main>
+    </div>
   </section>
-  <!-- subcribe -->
   <section class="subscribe py-5">
     <div class="container">
       <header class="title">
@@ -559,7 +559,6 @@
               <p><strong>Email</strong> : <a href="mailto:example@mail.com">example@mail.com</a></p>
             </li>
           </ul>
-
           <div class="main-social-footer-28 mt-3">
             <ul class="social-icons">
               <li class="facebook">
@@ -590,16 +589,16 @@
             <div class="col-sm-4 col-6 footer-list-28 mt-5">
               <h6 class="footer-title-28">Company</h6>
               <ul>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="blog.html">Blog Posts</a></li>
-                <li><a href="services.html">Services</a></li>
+                <li><a href="/about.html">About Us</a></li>
+                <li><a href="/blog.html">Blog Posts</a></li>
+                <li><a href="/services.html">Services</a></li>
                 <li><a href="#pricing">Pricing</a></li>
               </ul>
             </div>
             <div class="col-sm-4 col-6 footer-list-28 mt-5">
               <h6 class="footer-title-28">Quick Links</h6>
               <ul>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="/contact.html">Contact Us</a></li>
                 <li><a href="#signup">Create account</a></li>
                 <li><a href="#learn">Care Center</a></li>
                 <li><a href="#feedback">Site Feedack</a></li>
@@ -618,9 +617,9 @@
         </div>
       </div>
     </div>
-    <div class="footer-bot align-center py-lg-4 py-3 mt-5">
+    <div class="footer__bottom py-lg-4 mt-5">
       <div class="container">
-        <p class="title text-center"> © 2020 Pooch Care. All Rights Reserved. Design by <a href="https://w3layouts.com/">W3Layouts</a></p>
+        <p>© 2020 Pooch Care. All Rights Reserved. Design by <a href="">W3Layouts</a></p>
       </div>
     </div>
   </footer>
