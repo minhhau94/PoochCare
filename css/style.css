@@ -498,14 +498,27 @@ body {
     top: calc(50% - 40px);
 }
 .video .main i{
-    color: #189a46;
-    background-color: #fff;
+    background: #fff;
+    display: inline-block;
     width: 55px;
     height: 55px;
-    border-radius: 50%;
     line-height: 55px;
+    border-radius: 50%;
     transition: 0.3s ease-in-out;
+    -webkit-animation: ripple 1s linear infinite;
+    animation: ripple 1s linear infinite;
+    color: #189a46;
 }
+
+@keyframes ripple{
+    0% {
+        box-shadow: 0 0 0 0 rgb(15 162 66 / 16%), 0 0 0 10px rgb(15 162 67 / 25%), 0 0 0 20px rgb(15 162 67 / 25%);
+    }
+    100% {
+        box-shadow: 0 0 0 10px rgb(15 162 67 / 25%), 0 0 0 20px rgb(15 162 67 / 25%), 0 0 0 40px rgb(50 100 245 / 0%);
+    }
+}
+
 .video .main i:hover{
     transform: scale(1.1);
 }
