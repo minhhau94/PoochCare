@@ -39,6 +39,10 @@ body{
     color: #189a46;
 }
 
+.header .navbar-nav{
+    background-color: white;
+}
+
 .header .navbar-nav a.nav-link {
     font-size: 19.2px;
     font-weight: 400;
