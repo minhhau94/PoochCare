@@ -764,8 +764,5 @@ body {
     opacity: 0.8;
 }
 @media screen and (max-width: 768px){
-    .slider .carousel-item .carousel-caption {
-        max-width: 100%;
-        word-wrap: break-word;
-    }
+
 }
