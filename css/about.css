@@ -287,7 +287,6 @@ body {
     overflow: hidden;
 }
 .experts .main .image img{
-    display: block;
     border-radius: 10px;
     transition: all 0.3s linear 0s;
     cursor: pointer;
