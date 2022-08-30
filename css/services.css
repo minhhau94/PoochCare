@@ -200,6 +200,7 @@ body img{
     display: inline-block;
     text-transform: capitalize;
     text-decoration: none;
+    margin-bottom: 50px;
 }
 
 .photo-6-inf-right a.read:hover{

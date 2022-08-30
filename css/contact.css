@@ -197,6 +197,18 @@ body {
     margin-bottom: 20px;
 }
 
+.map-content-9 form input:focus, .map-content-9 form textarea:focus {
+    outline: none;
+    border: 1px solid #189a46;
+    box-shadow: none;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: transparent;
+}
+
+
 .findUs .carousel .container .map-content-9 form textarea{
     resize: none;
     min-height: 140px;
