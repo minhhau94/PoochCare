@@ -24,7 +24,7 @@ body {
     box-shadow: 0 3px 6px 0 rgb(0 0 0 / 5%);
 }
 .container {
-    max-width: 1200px;
+    width: 80%;
     margin: auto;
     padding: 0 25px;
 }
@@ -762,4 +762,10 @@ body {
 .footer__bottom p a:hover{
     text-decoration: underline;
     opacity: 0.8;
+}
+@media screen and (max-width: 768px){
+    .slider .carousel-item .carousel-caption {
+        max-width: 100%;
+        word-wrap: break-word;
+    }
 }
