@@ -23,8 +23,6 @@ body{
     box-shadow: 0 3px 6px 0 rgb(0 0 0 / 5%);
 }
 .container {
-    width: 80%;
-    margin: auto;
     padding: 0 25px;
 }
 .header .navbar-brand {
@@ -145,7 +143,7 @@ body{
 }
 
 .banner .container li{
-    display: inline;
+    display: inline-block;
     vertical-align: middle;
     font-size: 1.2em;
     line-height: 1.5;
@@ -289,12 +287,12 @@ body{
     color: #888;
 }
 
-.pagination-wrapper .page-pagination li{
+.blog .pagination-wrapper .page-pagination li{
     display: inline-block;
     margin: 0 5px;
 }
 
-.pagination-wrapper .page-pagination span.page-numbers{
+.blog .pagination-wrapper .page-pagination span.page-numbers{
     display: block;
     text-align: center;
     border: 0;
@@ -305,7 +303,7 @@ body{
     margin-right: 5px;
 }
 
-.pagination-wrapper .page-pagination a.page-numbers{
+.blog .pagination-wrapper .page-pagination a.page-numbers{
     font-size: 20px;
     font-weight: 600;
     color: black;
@@ -314,12 +312,15 @@ body{
     text-align: center;
     text-decoration: none;
 }
+.blog .row .card{
+    border: none;
+}
 
-.pagination-wrapper .page-pagination a.page-numbers:hover{
+.blog .pagination-wrapper .page-pagination a.page-numbers:hover{
     color: #189A46;
 }
 
-.pagination-wrapper .page-pagination a.next span.fa{
+.blog .pagination-wrapper .page-pagination a.next span.fa{
     font-size: 20px;
     font-weight: 600;
     color: black;
@@ -327,7 +328,7 @@ body{
     display: block;
 }
 
-.pagination-wrapper .page-pagination a.next{
+.blog .pagination-wrapper .page-pagination a.next{
     text-decoration: none;
 }
 
@@ -404,4 +405,17 @@ body{
 .footer__bottom p a:hover{
     text-decoration: underline;
     opacity: 0.8;
+}
+@media screen and (max-width: 1200px){
+
+    .header .navbar-toggler{
+        color: #fff;
+        border: 1px solid transparent;
+    }
+    .header .navbar-toggler-icon{
+        color: #fff;
+        line-height: 34px;
+        background-color: #189a46;
+        border-radius: 5px;
+    }
 }

@@ -24,8 +24,6 @@ body {
     box-shadow: 0 3px 6px 0 rgb(0 0 0 / 5%);
 }
 .container {
-    width: 80%;
-    margin: auto;
     padding: 0 25px;
 }
 .header .navbar-brand {
@@ -294,4 +292,17 @@ body img{
 .footer__bottom p a:hover{
     text-decoration: underline;
     opacity: 0.8;
+}
+@media screen and (max-width: 1200px){
+
+    .header .navbar-toggler{
+        color: #fff;
+        border: 1px solid transparent;
+    }
+    .header .navbar-toggler-icon{
+        color: #fff;
+        line-height: 34px;
+        background-color: #189a46;
+        border-radius: 5px;
+    }
 }
